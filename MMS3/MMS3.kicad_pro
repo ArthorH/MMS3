@@ -39,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.8,
-          "height": 1.27,
-          "width": 2.54
+          "drill": 1.0,
+          "height": 1.55,
+          "width": 1.55
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -53,7 +53,13 @@
           "min_clearance": 0.5
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "version": 2
@@ -187,7 +193,9 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -214,7 +222,12 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -432,7 +445,7 @@
       "field_name_whitespace": "warning",
       "footprint_filter": "ignore",
       "footprint_link_issues": "warning",
-      "four_way_junction": "ignore",
+      "four_way_junction": "warning",
       "ground_pin_not_ground": "warning",
       "hier_label_mismatch": "error",
       "isolated_pin_label": "warning",
@@ -450,7 +463,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
       "similar_label_and_power": "warning",
@@ -479,7 +492,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.15,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -492,7 +505,145 @@
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
         "tuning_profile": "",
-        "via_diameter": 0.6,
+        "via_diameter": 0.5,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.2,
+        "diff_pair_width": 0.13,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "CAN_120Ohm_diff",
+        "pcb_color": "rgb(0, 194, 194)",
+        "priority": 2,
+        "schematic_color": "rgb(0, 194, 194)",
+        "track_width": 0.13,
+        "tuning_profile": "",
+        "via_diameter": 0.5,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.12,
+        "diff_pair_gap": 0.12,
+        "diff_pair_width": 0.15,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "ETHERNET_100Ohm_diff",
+        "pcb_color": "rgb(132, 0, 132)",
+        "priority": 4,
+        "schematic_color": "rgb(132, 0, 132)",
+        "track_width": 0.15,
+        "tuning_profile": "",
+        "via_diameter": 0.5,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.15,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "GND",
+        "pcb_color": "rgb(0, 0, 255)",
+        "priority": 1,
+        "schematic_color": "rgb(0, 0, 255)",
+        "track_width": 0.3,
+        "tuning_profile": "",
+        "via_diameter": 0.5,
+        "via_drill": 0.3,
+        "wire_width": 10
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.12,
+        "diff_pair_gap": 0.12,
+        "diff_pair_width": 0.15,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "HDMI_100Ohm_diff",
+        "pcb_color": "rgb(132, 0, 0)",
+        "priority": 3,
+        "schematic_color": "rgb(132, 0, 0)",
+        "track_width": 0.15,
+        "tuning_profile": "",
+        "via_diameter": 0.5,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.12,
+        "diff_pair_gap": 0.12,
+        "diff_pair_width": 0.23,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "PCIe_85Ohm_diff",
+        "pcb_color": "rgb(0, 194, 0)",
+        "priority": 6,
+        "schematic_color": "rgb(0, 194, 0)",
+        "track_width": 0.23,
+        "tuning_profile": "",
+        "via_diameter": 0.5,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.15,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "PWR",
+        "pcb_color": "rgb(255, 0, 0)",
+        "priority": 0,
+        "schematic_color": "rgb(255, 0, 0)",
+        "track_width": 0.3,
+        "tuning_profile": "",
+        "via_diameter": 0.5,
+        "via_drill": 0.3,
+        "wire_width": 10
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.15,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "SDIO_50Ohm_se",
+        "pcb_color": "rgb(0, 132, 0)",
+        "priority": 7,
+        "schematic_color": "rgb(0, 132, 0)",
+        "track_width": 0.35,
+        "tuning_profile": "",
+        "via_diameter": 0.5,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.12,
+        "diff_pair_gap": 0.12,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "USB_90Ohm_diff",
+        "pcb_color": "rgb(204, 102, 0)",
+        "priority": 5,
+        "schematic_color": "rgb(204, 102, 0)",
+        "track_width": 0.2,
+        "tuning_profile": "",
+        "via_diameter": 0.5,
         "via_drill": 0.3,
         "wire_width": 6
       }
@@ -595,7 +746,101 @@
       "sort_asc": true,
       "sort_field": "Reference"
     },
-    "bus_aliases": {},
+    "bus_aliases": {
+      "CAN": [
+        "+",
+        "-"
+      ],
+      "ETHERNET": [
+        "D1+",
+        "D1-",
+        "D2+",
+        "D2-",
+        "D3+",
+        "D3-",
+        "D4+",
+        "D4-",
+        "LED_ACT",
+        "LED_LINK"
+      ],
+      "HDMI": [
+        "D2+",
+        "D2-",
+        "D1+",
+        "D1-",
+        "D0+",
+        "D0-",
+        "CLK+",
+        "CLK-",
+        "SDA",
+        "SCL",
+        "CEC",
+        "HOTPLUG"
+      ],
+      "I2C": [
+        "SCL",
+        "SDA"
+      ],
+      "MIPI": [
+        "CLK+",
+        "CLK-",
+        "D0+",
+        "D0-",
+        "D1+",
+        "D1-",
+        "D2+",
+        "D2-",
+        "D3+",
+        "D3-"
+      ],
+      "PCIe": [
+        "TX0+",
+        "TX0-",
+        "RX0+",
+        "RX0-"
+      ],
+      "REF_CLK": [
+        "REFCLK+",
+        "REFCLK-"
+      ],
+      "SDIO": [
+        "DAT0",
+        "DAT1",
+        "DAT2",
+        "DAT3",
+        "DAT4",
+        "DAT5",
+        "DAT6",
+        "DAT7",
+        "CLK",
+        "CMD"
+      ],
+      "SPI": [
+        "SCK",
+        "MOSI",
+        "MISO",
+        "CS"
+      ],
+      "SWD": [
+        "SWCLK",
+        "SWDIO",
+        "~{RST}"
+      ],
+      "UART": [
+        "TX",
+        "RX"
+      ],
+      "USB": [
+        "D+",
+        "D-"
+      ],
+      "USB3.0": [
+        "TX+",
+        "TX-",
+        "RX+",
+        "RX-"
+      ]
+    },
     "connection_grid_size": 50.0,
     "drawing": {
       "dashed_lines_dash_length_ratio": 12.0,
@@ -606,7 +851,7 @@
       "hop_over_size_choice": 0,
       "intersheets_ref_own_page": false,
       "intersheets_ref_prefix": "",
-      "intersheets_ref_short": false,
+      "intersheets_ref_short": true,
       "intersheets_ref_show": false,
       "intersheets_ref_suffix": "",
       "junction_size_choice": 3,
@@ -636,7 +881,7 @@
         "uuid": "712cea22-140d-4c92-923f-f4998caf3ecd"
       }
     ],
-    "used_designators": "J7,U803-804,C314-315,#PWR25-26,#PWR334-335,#PWR813-820,R19-22,R27,R31-32,R808-813",
+    "used_designators": "SW4-5,R22,R31,C12,D6,#PWR57-58,#PWR62-67,#PWR815",
     "variants": []
   },
   "sheets": [
@@ -655,6 +900,10 @@
     [
       "307a68f1-f486-4a0f-b1cd-0d4ec3697ff2",
       "CAN_TR2"
+    ],
+    [
+      "52278dca-3c86-4d4d-a41d-beb466f3ebfa",
+      "Slide-SW"
     ],
     [
       "05cbb48a-06b7-415e-80f6-4593be6cf8dc",
@@ -705,7 +954,9 @@
       "I2C_Flash"
     ]
   ],
-  "text_variables": {},
+  "text_variables": {
+    "SHEETTOTAL": "5"
+  },
   "tuning_profiles": {
     "meta": {
       "version": 0

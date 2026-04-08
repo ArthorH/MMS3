@@ -1,0 +1,4 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "Tact") (type "KiCad") (uri "/data/UserSpace/Projects/HW/MMS3/Lib/Tact-sw/Tact.kicad_sym") (options "") (descr ""))
+)

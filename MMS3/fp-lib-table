@@ -1,0 +1,10 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "Tact-sw") (type "KiCad") (uri "/data/UserSpace/Projects/HW/MMS3/Lib/Tact-sw/Tact-sw.pretty") (options "") (descr ""))
+	(lib (name "Tact") (type "KiCad") (uri "/data/UserSpace/Projects/HW/MMS3/Lib/Tact-sw/Tact.pretty") (options "") (descr ""))
+	(lib (name "Tact-sw") (type "KiCad") (uri "/data/UserSpace/Projects/HW/MMS3/Lib/Tact-sw/Tact-sw.pretty") (options "") (descr ""))
+	(lib (name "Tact-sw") (type "KiCad") (uri "/data/UserSpace/Projects/HW/MMS3/Lib/Tact-sw/Tact-sw.pretty") (options "") (descr ""))
+	(lib (name "FixLed307") (type "KiCad") (uri "/data/UserSpace/Projects/HW/MMS3/Lib/Fixled307/FixLed307.pretty") (options "") (descr ""))
+	(lib (name "DIN") (type "KiCad") (uri "/data/UserSpace/Projects/HW/MMS3/Lib/DIN.pretty") (options "") (descr ""))
+	(lib (name "Slide-SW") (type "KiCad") (uri "/data/UserSpace/Projects/HW/MMS3/Lib/Slide-SW/Slide-SW.pretty") (options "") (descr ""))
+)
