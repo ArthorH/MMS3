@@ -1442,7 +1442,7 @@
 		)
 		(uuid "ff56467e-d6ec-40da-85cb-761ec139579b")
 	)
-	(text "USB- Steely Wheely"
+	(text "USB- Stealy Wheely"
 		(exclude_from_sim no)
 		(at 132.08 25.4 0)
 		(effects
@@ -1971,16 +1971,6 @@
 	)
 	(bus
 		(pts
-			(xy 217.17 168.91) (xy 217.17 180.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "79134389-a01b-4874-8d70-9b50406beecf")
-	)
-	(bus
-		(pts
 			(xy 156.21 158.75) (xy 156.21 151.13)
 		)
 		(stroke
@@ -2101,16 +2091,6 @@
 	)
 	(bus
 		(pts
-			(xy 213.36 168.91) (xy 213.36 180.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9d8748d0-07ca-4a81-818f-06c36907b503")
-	)
-	(bus
-		(pts
 			(xy 104.14 156.21) (xy 111.76 156.21)
 		)
 		(stroke
@@ -2118,6 +2098,16 @@
 			(type default)
 		)
 		(uuid "9ea2b4e4-d7b0-4885-aef8-3f2c71f8a514")
+	)
+	(bus
+		(pts
+			(xy 220.98 168.91) (xy 220.98 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f057248-345d-4877-85bc-45804d0095ff")
 	)
 	(wire
 		(pts
@@ -2211,13 +2201,23 @@
 	)
 	(bus
 		(pts
-			(xy 209.55 168.91) (xy 209.55 180.34)
+			(xy 213.36 168.91) (xy 213.36 180.34)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "d1e12e48-b08d-4edf-8c33-8d42794bbf7e")
+	)
+	(bus
+		(pts
+			(xy 217.17 168.91) (xy 217.17 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3d34b2f-fb55-441e-b933-d3d0c4a9a2fd")
 	)
 	(wire
 		(pts
@@ -2248,26 +2248,6 @@
 			(type default)
 		)
 		(uuid "dc09d990-2641-425b-9ac0-6b18eccf17ed")
-	)
-	(bus
-		(pts
-			(xy 203.2 168.91) (xy 203.2 180.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dec4e6dd-748a-4071-8fa0-ce05c55f17a7")
-	)
-	(bus
-		(pts
-			(xy 220.98 168.91) (xy 220.98 180.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "df05da7f-e66c-4b66-acaf-250e4a8ad8c1")
 	)
 	(wire
 		(pts
@@ -19824,18 +19804,8 @@
 				(justify right)
 			)
 		)
-		(pin "Chainbus_UART_addr[0..2]" input
-			(at 220.98 180.34 90)
-			(uuid "4c6a36a9-038e-4e2f-af99-866a352a9afd")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "Chainbus{SPI}" input
-			(at 217.17 180.34 90)
+			(at 220.98 180.34 90)
 			(uuid "0f1b893d-5577-468d-b716-93fef271f014")
 			(effects
 				(font
@@ -19844,18 +19814,8 @@
 				(justify right)
 			)
 		)
-		(pin "Chainbus_I2C_addr[0..2]" input
-			(at 213.36 180.34 90)
-			(uuid "6bfa39f9-8e6a-4e0a-8209-8c2c8d1b822e")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "Altmode[1..16]" input
-			(at 209.55 180.34 90)
+			(at 213.36 180.34 90)
 			(uuid "19590def-0759-4114-b8a8-92d2a28d1057")
 			(effects
 				(font
@@ -19874,9 +19834,9 @@
 				(justify right)
 			)
 		)
-		(pin "Chainbus_SPI_CS[0..2]" input
-			(at 203.2 180.34 90)
-			(uuid "8a31cb68-a944-45cf-b108-c0f63e27a538")
+		(pin "Chainbus_addr[0..7]" input
+			(at 217.17 180.34 90)
+			(uuid "0df65e5d-ebd5-4f08-998c-e1559132dba2")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20235,7 +20195,7 @@
 			)
 		)
 		(pin "Altmode[1..16]" input
-			(at 209.55 168.91 270)
+			(at 213.36 168.91 270)
 			(uuid "9bd53822-32b4-43ae-95ac-d48608045221")
 			(effects
 				(font
@@ -20254,39 +20214,9 @@
 				(justify left)
 			)
 		)
-		(pin "Chainbus_SPI_CS[0..2]" input
-			(at 203.2 168.91 270)
-			(uuid "1c6aeccf-83ec-4912-939b-41dd4f35a7e2")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "Chainbus_UART_addr[0..2]" input
-			(at 220.98 168.91 270)
-			(uuid "6d695783-e42e-499c-9656-714925e6ad8b")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "Chainbus{SPI}" input
-			(at 217.17 168.91 270)
+			(at 220.98 168.91 270)
 			(uuid "29981fcd-0818-448d-8be8-dea3fde087de")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "Chainbus_I2C_addr[0..2]" input
-			(at 213.36 168.91 270)
-			(uuid "93c3a9df-ea04-41cf-9e5e-40f50bfa3fc6")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20322,6 +20252,16 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+		(pin "Chainbus_addr[0..7]" input
+			(at 217.17 168.91 270)
+			(uuid "00846f31-01eb-4ac3-a326-0cad623b8940")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
