@@ -1217,6 +1217,121 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:PWR_FLAG"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:VCC"
 			(power global)
 			(pin_numbers
@@ -1468,6 +1583,12 @@
 		(uuid "7d62ffbf-bf49-456c-8f35-2c043933072c")
 	)
 	(junction
+		(at 101.6 254)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ad6ddb93-da21-4b5f-a1d4-1c51a3d9a3aa")
+	)
+	(junction
 		(at 228.6 171.45)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1478,6 +1599,14 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fed029d2-978a-41f7-a918-d5ee3d9d71ea")
+	)
+	(no_connect
+		(at 237.49 139.7)
+		(uuid "4ca9e3c1-842b-4698-badf-fe9705d026be")
+	)
+	(no_connect
+		(at 275.59 105.41)
+		(uuid "996b1d15-c275-4803-8414-c6cee3d72b9f")
 	)
 	(wire
 		(pts
@@ -1528,6 +1657,16 @@
 			(type default)
 		)
 		(uuid "0a9f8e18-fefb-493b-bbf4-98884e19ce06")
+	)
+	(wire
+		(pts
+			(xy 92.71 252.73) (xy 92.71 254)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ba5bb23-3ef0-4863-857f-e805823e579c")
 	)
 	(polyline
 		(pts
@@ -1669,6 +1808,16 @@
 		)
 		(uuid "249fc2df-dec5-4073-9d74-ba3faf2e8ba5")
 	)
+	(wire
+		(pts
+			(xy 101.6 254) (xy 101.6 256.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29e8dd5f-6c3d-48bd-87a3-092742233e28")
+	)
 	(bus
 		(pts
 			(xy 151.13 132.08) (xy 156.21 132.08)
@@ -1698,6 +1847,16 @@
 			(type default)
 		)
 		(uuid "2d249629-b047-42cb-a773-3e3c28608253")
+	)
+	(bus
+		(pts
+			(xy 270.51 105.41) (xy 275.59 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e708d4f-d570-42dd-a01c-15541f60d922")
 	)
 	(bus
 		(pts
@@ -1929,6 +2088,16 @@
 		)
 		(uuid "70b00da5-5dcf-493b-943b-9f514ae5a74a")
 	)
+	(wire
+		(pts
+			(xy 237.49 139.7) (xy 241.3 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7129cc8b-1fa7-4cb4-9270-edf495cefd44")
+	)
 	(bus
 		(pts
 			(xy 156.21 132.08) (xy 156.21 139.7)
@@ -1948,16 +2117,6 @@
 			(type default)
 		)
 		(uuid "746d5aef-1b5e-4279-b063-78d90da42fb5")
-	)
-	(wire
-		(pts
-			(xy 232.41 139.7) (xy 241.3 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7550b455-db78-46e6-8386-88bdd0298679")
 	)
 	(polyline
 		(pts
@@ -2159,6 +2318,16 @@
 		)
 		(uuid "aac45925-12f4-4ef3-b938-be7fd3e94bc5")
 	)
+	(wire
+		(pts
+			(xy 101.6 254) (xy 92.71 254)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b05fe4a8-71b0-4771-bdeb-2bd78d1bed4d")
+	)
 	(polyline
 		(pts
 			(xy 138.43 62.23) (xy 145.3318 62.2299)
@@ -2341,7 +2510,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 252.73) (xy 101.6 256.54)
+			(xy 101.6 252.73) (xy 101.6 254)
 		)
 		(stroke
 			(width 0)
@@ -19027,6 +19196,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 92.71 252.73 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6a5eab1c-2cd7-435c-b1c1-c297a5405481")
+		(property "Reference" "#FLG01"
+			(at 92.71 250.825 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 92.71 247.65 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 92.71 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 92.71 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 92.71 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "dcbf4cc5-86e0-4338-a61b-b455ab71809d")
+		)
+		(instances
+			(project "MMS3"
+				(path "/712cea22-140d-4c92-923f-f4998caf3ecd"
+					(reference "#FLG01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Graphic:SYM_ESD_Small")
 		(at 151.13 246.38 0)
 		(unit 1)
@@ -20182,16 +20429,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-			)
-		)
-		(pin "I2C_Memory_addr" input
-			(at 232.41 139.7 0)
-			(uuid "c44d5f05-2fe2-499a-a7b5-fcf8a8984311")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 			)
 		)
 		(pin "Altmode[1..16]" input

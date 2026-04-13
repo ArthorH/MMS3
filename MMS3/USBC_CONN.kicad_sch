@@ -2469,6 +2469,121 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:PWR_FLAG"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:VBUS"
 			(power global)
 			(pin_numbers
@@ -2640,6 +2755,12 @@
 		(uuid "5d216fc9-7cf2-4f93-bf8b-5d3184bf42bb")
 	)
 	(junction
+		(at 153.67 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "68e80bb5-8be2-4a24-9558-10bf3621c539")
+	)
+	(junction
 		(at 92.71 119.38)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2698,6 +2819,16 @@
 			(type default)
 		)
 		(uuid "08baaf3d-7e0c-44df-b7a7-5317b9895cfb")
+	)
+	(wire
+		(pts
+			(xy 153.67 71.12) (xy 153.67 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1188a738-180e-4315-84dc-b07b5b5cb776")
 	)
 	(wire
 		(pts
@@ -2821,7 +2952,7 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 73.66) (xy 163.83 73.66)
+			(xy 138.43 73.66) (xy 153.67 73.66)
 		)
 		(stroke
 			(width 0)
@@ -2958,6 +3089,16 @@
 			(type default)
 		)
 		(uuid "ac683f82-ed69-4659-a842-0fa274373c6c")
+	)
+	(wire
+		(pts
+			(xy 153.67 73.66) (xy 163.83 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "acb2c13b-e08a-4501-8365-34993b818553")
 	)
 	(wire
 		(pts
@@ -3491,6 +3632,84 @@
 			(project "MMS3"
 				(path "/712cea22-140d-4c92-923f-f4998caf3ecd/6293ce90-9b00-41f8-95cd-8a2592163f0a"
 					(reference "C800")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 153.67 71.12 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "477e27a9-c15b-4103-9144-549d90b61469")
+		(property "Reference" "#FLG02"
+			(at 153.67 69.215 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 153.67 66.04 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 153.67 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 153.67 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 153.67 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0dc62ce4-7f7b-4a4b-8654-ab4804804626")
+		)
+		(instances
+			(project "MMS3"
+				(path "/712cea22-140d-4c92-923f-f4998caf3ecd/6293ce90-9b00-41f8-95cd-8a2592163f0a"
+					(reference "#FLG02")
 					(unit 1)
 				)
 			)
